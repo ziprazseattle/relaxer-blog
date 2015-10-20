@@ -55,6 +55,7 @@ body {
 
 
 
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -62,7 +63,7 @@ body {
 /* Center the container */
 #container {
   width: 960px;
-  margin: auto;
+  margin: 0 auto;
   box-sizing:border box;
   background-color: #f0efef;
 }
@@ -117,23 +118,46 @@ header h1 {
 } 
 
 
-
 /******************************************
-/* BODY CONTENT
+/* MAIN CONTENT AREA 
 /*******************************************/
 
+
+.main-content-area a:link {
+  text-decoration: none;
+  color: #033048;
+  font-weight: 600;
+}
+
+.main-content-area a:visited {
+    color: #033048;
+}
+
+.main-content-area a:hover {
+    border-bottom: solid 1px #033048;
+}
+
+.main-content-area a:active {
+    color: #red;
+} 
+
 .main-content-area {
-  background-color: rgba(100,100,100,.2);
   padding: 20px 90px;
 }
 
+
+/******************************************
+/* POSTS SECTION 
+/*******************************************/
+
+
+
 .posts {
-  background-color: rgba(100,100,100,.2);
   float:left;
   width: 66%;
 }
 
-.posts p::first-letter {
+.posts p.dropcap::first-letter {
   font-size: 55px;
   font-weight: 600;
   color:  #444;
@@ -148,16 +172,23 @@ header h1 {
   color:  #033048;
 }
 
+.posts-link {
+  text-align: right;
+}
+
+
 img {
   width: 100%; 
 }
 
+
+
+
 /******************************************
-/* BODY CONTENT
+/* SIDEBAR CONTENT
 /*******************************************/
 
 .sidebar {
-  background-color: rgba(100,100,100,.4);
   float: right;
   width: 34%; 
   padding: 0 0 20px 20px;
@@ -181,8 +212,8 @@ img {
   font-size: 18px;
 }
 
-.sidebar a {
-
+.ad {
+  margin: 30px 0 0 0;
 }
 
 /******************************************
@@ -191,7 +222,6 @@ img {
 
 
 .sign-up-banner {
-      background-color: #f9e42e;
       text-align: center;
       padding: 20px 0px;
       color: fff;
@@ -236,9 +266,6 @@ nav li {display: inline-block;
 
 }
 
-li img {height: 25px;
-      
-}
 
 footer small {
   color: #fff;
